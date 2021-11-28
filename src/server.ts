@@ -5,7 +5,7 @@ class Server {
   private server: http.Server;
   private port: string | number;
 
-  constructor(port?: string | number ) {
+  constructor(port?: string | number) {
     this.server = http.createServer(app);
     this.port = process.env.PORT || port || 4000;
     this.listenToPort(this.port);
