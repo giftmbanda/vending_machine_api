@@ -1,10 +1,10 @@
 import express, { Application } from 'express';
 
 class Server {
-  public app: Application;
-  public port: string | number;
+  private app: Application;
+  private port: string | number;
 
-  constructor(port?: string | number ) {
+  constructor(port?: string | number) {
     this.app = express();
     this.port = process.env.PORT || port || 4000;
     this.listenToPort(this.port);
@@ -17,4 +17,4 @@ class Server {
   }
 }
 
-const serve = new Server();
+const server = new Server();
