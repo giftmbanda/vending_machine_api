@@ -1,10 +1,4 @@
-interface IProduct { // product interface 
-    id: number;
-    name: string;
-    quantity: number;
-    type: string;
-    price: number;
-}
+import IProduct from '../interfaces/IProduct'; // Product interface 
 
 const products: IProduct[] = [
     { id: 1, name: "Niknaks Spicy Beef 135g", quantity: 6, type: "Snack", price: 11.50 },

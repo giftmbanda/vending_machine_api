@@ -18,7 +18,6 @@ class JSONResponse {
   static serverError(res: Response, message: string, data?: any) {
     res.status(500).json({ code: 500, message: message || "internal server error", data });
   }
-
 }
 
 export default JSONResponse;

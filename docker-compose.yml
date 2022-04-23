@@ -1,8 +1,8 @@
 version: "3.9"
 services:
     back-end:
-        container_name: loadingRoute
+        container_name: vending_machine_api
         build: .
-        ports: 
+        ports:
             # <Port exposed> : <Port running inside container>
             - "4000:4000"
